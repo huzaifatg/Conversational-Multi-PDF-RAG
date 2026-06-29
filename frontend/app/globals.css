@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+  background: #FAFAFA;
+}
+
+body {
+  margin: 0;
+  color: #09090B;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Visible, deliberate focus rings instead of relying on each component to
+   define its own (accessibility: keyboard navigation should always be
+   legible against the background). */
+:focus-visible {
+  outline: 2px solid #18181B;
+  outline-offset: 2px;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0.75rem 0;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin: 0.75rem 0;
+}
+
+.markdown-body li {
+  margin: 0.35rem 0;
+  line-height: 1.6;
+}
+
+.markdown-body p {
+  margin: 0 0 1rem;
+  line-height: 1.65;
+}
+
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #09090B;
+}
+
+.markdown-body h3 {
+  font-size: 1.1em;
+}
+
+.markdown-body strong {
+  color: #09090B;
+  font-weight: 600;
+}
+
+.markdown-body code {
+  background: #F4F4F5;
+  color: #EF4444;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.3rem;
+  font-size: 0.85em;
+  font-family: 'SF Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
+}
+
+.markdown-body pre {
+  background: #18181B;
+  color: #F4F4F5;
+  border: 1px solid #E4E4E7;
+  padding: 0.9rem 1rem;
+  border-radius: 0.6rem;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+}
+
+.markdown-body pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  font-size: 0.85em;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4D4D8;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A1A1AA;
+}
+
+/* Respect reduced-motion preferences for the entrance/transition animations
+   introduced across the chat and documents views. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

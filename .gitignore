@@ -1,0 +1,48 @@
+# --- Python / backend ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+backend/index_state.json
+
+# --- Node / frontend ---
+frontend/node_modules/
+node_modules/
+frontend/.next/
+.next/
+frontend/out/
+out/
+dist/
+frontend/.turbo/
+npm-debug.log*
+
+# --- Environment ---
+.env
+.env.local
+.env.*
+!.env.example
+
+# --- Build & Cache ---
+.cache/
+coverage/
+*.log
+
+# --- Uploaded/indexed documents (user data, not source) ---
+documents/*.pdf
+!documents/.gitkeep
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+
