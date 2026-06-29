@@ -151,7 +151,7 @@ export function ChatApp() {
               <span className="flex h-6 w-6 items-center justify-center rounded bg-accent text-white shadow-sm">
                 <MessageSquareText className="h-3 w-3" />
               </span>
-              <h1 className="text-sm font-medium tracking-tight text-textPrimary">Local RAG</h1>
+              <h1 className="text-sm font-medium tracking-tight text-textPrimary whitespace-nowrap truncate">Conversational Multi-PDF RAG</h1>
             </div>
           </div>
         </header>
@@ -216,7 +216,7 @@ export function ChatApp() {
                 value={input}
                 onChange={(event) => setInput(event.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Message Local RAG..."
+                placeholder="Message"
                 rows={1}
                 className="max-h-[250px] min-h-[56px] w-full resize-none bg-transparent pl-5 pr-14 py-4 text-[15px] leading-relaxed text-textPrimary outline-none placeholder:text-textTertiary"
               />
@@ -232,8 +232,8 @@ export function ChatApp() {
                 </button>
               </div>
             </div>
-            <div className="mt-3 text-center text-[11px] text-textTertiary">
-              Local RAG can make mistakes. Check important info.
+            <div className="mt-3 text-center text-[11px] text-textTertiary min-h-[16px]">
+              
             </div>
           </div>
         </div>
