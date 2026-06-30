@@ -1,4 +1,4 @@
-# Local RAG
+# Conversational Multi-PDF RAG
 
 A self-hosted Retrieval-Augmented Generation app: upload PDFs, ask questions about them, and get answers with cited sources — all running on your own machine, with no data leaving it.
 
